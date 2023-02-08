@@ -80,3 +80,22 @@
       margin-top: 0;
     }
   }
+
+
+
+  #Lhome {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #Lhome .lgForm h2 {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  #Lhome .loginContainer {
+    width: 60%;
+  }

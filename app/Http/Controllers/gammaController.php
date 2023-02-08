@@ -14,10 +14,15 @@ class gammaController extends Controller
      */
     public function index()
     {
+        $name = "Singh";
+        return view('account.index');
+        
         // @TODO
-        $gamma = Gamma::latest()->paginate(5);
-        return view('Gamma.index', compact('gamma'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+        // $gamma = Gamma::latest()->paginate(5);
+        // return view('Gamma.index', compact('gamma'))
+        //     ->with('i', (request()->input('page', 1) - 1) * 5);
+
+
     }
 
     /**

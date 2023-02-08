@@ -457,6 +457,7 @@
             
             if (isset($_GET['login'])) {
                 
+                //$conn = DB::new mysqli()
                 $conn = DB::connection()->getPDO();
                 //$conn = DB::connection()->getPDO();
             
@@ -467,8 +468,8 @@
                 $data = $userCheck->setFetchMode(PDO::FETCH_ASSOC);
                 if($userCheck)
                 {
-                    $_SESSION['Role'] = $data('Role');
-                    $_SESSION['userId'] = $data('userId');
+                    // $_SESSION['Role'] = $data['Role']
+                    // $_SESSION['userId'] = $data['userId'];
             
                     echo "<script>alert('Login Successful');</script>";
                 }

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\gammaController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,8 +23,20 @@ Route::get('/connection', function () {
     return view('connection');
 });
 
-Route::resource('gamma', 'App/Http/Controllers/gammaController');
+// Route::get('/account', function () {
+//     return view('account');
+// });
+
+Route::get('/account', [gammaController::class, 'index']);
+
+//Route::get('/login', 'gammaController@index');
+
+// Route::resource('gamma', 'App/Http/Controllers/gammaController');
 
 // Route::get('../resources/views/dash/', function () {
 //     return view('dash');
 // });
+
+Route::get('/dash', function () {
+    return view('dash.index');
+});
