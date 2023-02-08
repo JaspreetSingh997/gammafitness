@@ -37,6 +37,4 @@ Route::get('/account', [gammaController::class, 'index']);
 //     return view('dash');
 // });
 
-Route::get('/dash', function () {
-    return view('dash.index');
-});
+Route::get('/dash', [gammaController::class, 'dash']);

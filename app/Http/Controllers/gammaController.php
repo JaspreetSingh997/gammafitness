@@ -92,4 +92,9 @@ class gammaController extends Controller
     {
         //
     }
+
+    public function dash()
+    {
+        return view('dash.index');
+    }
 }
