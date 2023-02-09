@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'K2D', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    color: #28313c;
+}
+
+#dashHome {
+    width: 100%;
+    height: 100vh;
+    background: #f3f4f8;
+}
+
+.dashContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dashContainer .dashSideBar {
+    width: 18%;
+    height: 100vh;
+    background: #172229;
+    background: linear-gradient(#171f29, #2e4158, #171f29);
+}
+
+.dashContainer .dashMainContainer {
+    width: 82%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+
+.dashMainContainer::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 10px;
+}
+
+.dashMainContainer::-webkit-scrollbar-thumb {
+    background: rgb(1 2 3 / 50%);
+    border-radius: 10px;
+}
+
+.dashMainContainer::-webkit-scrollbar-corner {
+    height: 0;
+}
+
+.dashContainer .sideHeaderPart {
+    padding: 10px;
+    background: #171f29;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dashContainer .sideHeaderPart .companyName {
+    color: #fff;
+    font-size: 9pt;
+    display: flex;
+}
+
+.dashContainer .sideHeaderPart .companyName .companyLogo {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transform: translate(30px, 0)
+}
+
+.dashContainer .sideHeaderPart .companyName .companyLogo img {
+    width: 100%;
+}
+
+.gammaChevDown {
+    font-size: 15pt;
+    transform: translate(10px, 4px);
+    cursor: pointer;
+}
+
+.userLogged .name {
+    transform: translateY(-10px);
+    display: flex;
+}
+
+.userLogged .name .status {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #0f0;
+
+    transform: translate(0, -6px);
+
+}
+
+.userLogged .name p {
+    color: #ccc;
+    font-size: 10pt;
+    transform: translate(10px, -10px);
+}
+
+.dashList {
+    width: 100%;
+}
+
+.dashList .dashNavbar {
+    display: block;
+    height: 80vh;
+    width: 100%;
+    overflow: scroll;
+}
+
+.dashNavbar::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 10px;
+}
+
+.dashNavbar::-webkit-scrollbar-thumb {
+    background: rgb(1 2 3 / 50%);
+    border-radius: 10px;
+}
+
+.dashNavbar::-webkit-scrollbar-corner {
+    height: 0;
+}
+
+.dashNavbar li {
+    padding: 15px 0;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dashNavbar li a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+
+.dashNavbar li a:hover {
+    color: #fff;
+}
+
+.dashNavbar li ion-icon {
+    color: #fff;
+}
+
+/* Per LI Style */
+
+.dashNavbar li .leftIcon {
+    padding: 0 15px;
+}
+
+.dashNavbar li .text {
+    padding: 0 10px;
+    transform: translateY(-2px);
+}
+
+.dashNavbar li .dropDown {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.dashNavbar li .dropDown a {
+    padding: .5rem 0;
+    white-space: nowrap;
+    display: block;
+}
+
+.dashNavbar li .rightIcon {
+    text-align: right;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.dashNavbar li .withGiftDrop {
+    position: absolute;
+    top: 5.5%;
+    left: 100%;
+}
+
+.dashNavbar li .giftDropOpen {
+    transform: translate(-70px, -5px);
+}
+
+.dashNavbar li .withGiftDrop ion-icon {
+    color: #fcbd01;
+    font-size: 13pt;
+
+}
+
+.dashNavbar li .gift ion-icon {
+    color: #fcbd01;
+    font-size: 13pt;
+}
+
+.dashFooterPart {
+    display: flex;
+    background: #171f29;
+    height: 5vh;
+    width: 100%;
+}
+
+.dashFooterPart .chevLeft {
+    padding: 10px;
+}
+
+.dashFooterPart .chevLeft ion-icon {
+    color: #fff;
+    font-size: 15pt;
+}
+
+.dashFooterPart .version {
+    position: relative;
+    left: 60%;
+    top: 10px;
+}
+
+.dashFooterPart .version p {
+    color: #919191;
+    font-size: 9pt;
+}
+
+/* Dashboard Main Container */
+
+.dMainHeader {
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    background: #fff;
+}
+
+.dMainHeader .dMainTitle {
+    padding: 10px;
+    font-size: 12pt;
+}
+
+.breadcrumbs .breadC {
+    display: flex;
+    color: #8e9aaa;
+}
+
+.breadC li {
+    list-style: none;
+    padding: 18px 10px;
+    margin: 0 2px;
+    font-size: 10pt;
+}
+
+.breadC span {
+    padding: 15px 0;
+}
+
+.menuOptions {
+    display: flex;
+    width: 24%;
+    flex-direction: row;
+    position: relative;
+    left: 50%;
+
+}
+
+.menuOptions ion-icon {
+    font-size: 15pt;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.dMainCategories {
+    width: 100%;
+    background: #fff;
+}
+
+.dMainCategories .dMainCategoryList {
+    display: flex;
+    border-top: 1px solid rgb(1 2 3 / 15%);
+    box-shadow: 0 5px 5px rgb(1 2 3 / 40%);
+    /* border-bottom: 1px solid rgba(1 2 3 / 15%); */
+}
+
+.dMainCategoryList li {
+    list-style: none;
+    padding: 10px 20px;
+    border-right: 1px solid rgb(1 2 3 / 15%);
+}
+
+.overviewCards {
+    padding: 20px;
+    width: 100%;
+}
+
+.overviewCards .ovCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.overviewCards .ovCard {
+    width: 23%;
+    border-radius: 10px;
+    padding: 20px;
+    background: #fff;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0 auto;
+}
+
+.overviewCards .ovCard .ovHeading {
+
+    font-size: 10pt;
+}
+
+.overviewCards .ovCard .ovHeading p {
+    margin: 10px 0;
+    transform: translateY(15px);
+    color: #FF323B;
+    font-weight: bold;
+}
+
+.overviewCards .ovCard .ovIcon {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.overviewCards .ovCard .ovIcon ion-icon {
+    font-size: 18pt;
+    color: #8e9aaa;
+}
+
+.ovCharts {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.ovCharts .chartCard {
+    width: 50%;
+}
+
+.chartCard #myChart, .chartCard #myChartTwo {
+    background: #fff;
+    border-radius: 12px;
+}
