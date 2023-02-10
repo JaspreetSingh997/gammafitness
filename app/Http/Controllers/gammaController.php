@@ -97,4 +97,13 @@ class gammaController extends Controller
     {
         return view('dash.index');
     }
+
+    public function products()
+    {
+        return view('dash.products.index');
+    }
+    public function productadd()
+    {
+        return view('dash.products.add.index');
+    }
 }

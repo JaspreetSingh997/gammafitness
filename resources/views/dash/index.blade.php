@@ -334,7 +334,7 @@
                     <div class="dMainCategories">
                         <ul class="dMainCategoryList">
                             <li>Overview</li>
-                            <li>Products</li>
+                            <li><a href="dash/products/">Products</a></li>
                             <li>Invoice</li>
                             <li>Sales</li>
                         </ul>
@@ -451,7 +451,6 @@
                     data: values
                 }]
             },
-            
             options: {
                 legend: {
                     display: false

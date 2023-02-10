@@ -28,7 +28,7 @@ body {
     flex-wrap: wrap;
 }
 
-.dashContainer .dashSideBar {
+.dashSideBar {
     width: 18%;
     height: 100vh;
     background: #172229;
@@ -56,26 +56,26 @@ body {
     height: 0;
 }
 
-.dashContainer .sideHeaderPart {
+.sideHeaderPart {
     padding: 10px;
     background: #171f29;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.dashContainer .sideHeaderPart .companyName {
+.sideHeaderPart .companyName {
     color: #fff;
     font-size: 9pt;
     display: flex;
 }
 
-.dashContainer .sideHeaderPart .companyName .companyLogo {
+.sideHeaderPart .companyName .companyLogo {
     width: 50px;
     height: 50px;
     position: relative;
     transform: translate(30px, 0)
 }
 
-.dashContainer .sideHeaderPart .companyName .companyLogo img {
+.sideHeaderPart .companyName .companyLogo img {
     width: 100%;
 }
 
@@ -260,10 +260,10 @@ body {
 
 .menuOptions {
     display: flex;
-    width: 24%;
+    width: 23%;
     flex-direction: row;
     position: relative;
-    left: 50%;
+    left: 45%;
 
 }
 
@@ -352,7 +352,154 @@ body {
     width: 50%;
 }
 
-.chartCard #myChart, .chartCard #myChartTwo {
+.chartCard #myChart,
+.chartCard #myChartTwo {
     background: #fff;
     border-radius: 12px;
 }
+
+
+/* Product Add Page */
+
+#productAdd {
+    width: 100%;
+    background: #f3F4F8;
+}
+
+.pAddContainer {
+    width: 100%;
+    display: flex;
+}
+
+.productAddMain::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 10px;
+}
+
+.productAddMain::-webkit-scrollbar-thumb {
+    background: rgb(1 2 3 / 20%);
+    border-radius: 10px;
+}
+
+.productAddMain::-webkit-scrollbar-corner {
+    height: 0;
+}
+
+.pAddContainer .productAddMain {
+    width: 82% !important;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.productAddBox {
+    /* background: #fff; */
+    padding: 20px;
+    border-radius: 10px;
+    width: 95%;
+    margin: 5% auto;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.pAddBox1 {
+    background: #fff;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #3d3d3d;
+}
+
+.pBoxHeading {
+    color: #da9500;
+}
+
+.pAddBox1 .row .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.pAddBox1 .row .prices {
+    display: flex;
+    width: 72%;
+
+
+}
+
+.pAddBox1 .row .prices input {
+    margin: 0 10px;
+}
+
+.pAddBox1 .row .col-75 {
+    float: left;
+    width: 70%;
+    margin: 6px;
+}
+
+.pAddBox1 .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pBoxContainer {
+    border-radius: 5px;
+    background: #f2f2f2;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.pAddBox1 label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=text],
+select,
+textarea,
+input[type=file] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background: #04AA6D;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background: #FF323B;
+}
+
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.forLandingCheck {
+    display: flex;
+    padding: 20px 0;
+}
+
+.landingP {
+    display: none;
+}
+
+#landingCheckBox {
+    padding: 20px;
+}
+

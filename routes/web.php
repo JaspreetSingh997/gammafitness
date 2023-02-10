@@ -38,3 +38,7 @@ Route::get('/account', [gammaController::class, 'index']);
 // });
 
 Route::get('/dash', [gammaController::class, 'dash']);
+
+Route::get('/dash/products', [gammaController::class, 'products']);
+
+Route::get('/dash/products/add', [gammaController::class, 'productadd']);
