@@ -85,7 +85,7 @@ $test = '';
                 echo "<script>alert('Login Successful'); </script>";
                 ?>
                 <script>
-                    window.location.href= "../resources/views/dash/";
+                    window.location.href= "../public/dash/";
                 </script>
                 <?php
             } else {

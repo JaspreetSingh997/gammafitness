@@ -14,7 +14,6 @@ class gammaController extends Controller
      */
     public function index()
     {
-        $name = "Singh";
         return view('account.index');
         
         // @TODO
@@ -22,9 +21,12 @@ class gammaController extends Controller
         // return view('Gamma.index', compact('gamma'))
         //     ->with('i', (request()->input('page', 1) - 1) * 5);
 
-
     }
 
+    public function loginCheck() {
+        return view('account.logcheck');
+    }
+    
     /**
      * Show the form for creating a new resource.
      *

@@ -27,7 +27,8 @@ Route::get('/connection', function () {
 //     return view('account');
 // });
 
-Route::get('/account', [gammaController::class, 'index']);
+Route::get('/account', [gammaController::class, 'index'])->name('postSaveEdit');;
+//Route::post('/account', [gammaController::class, 'loginCheck'])->name('postSaveEdit');;
 
 //Route::get('/login', 'gammaController@index');
 

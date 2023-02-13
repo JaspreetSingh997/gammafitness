@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'K2D', sans-serif;
     box-sizing: border-box;
+    transition: 350ms ease-in-out;
 }
 
 html {
@@ -503,3 +504,40 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
+
+
+#productAddForm .nav {
+    display: flex;
+    padding: 20px;
+}
+
+#productAddForm .nav li {
+    list-style: none;
+}
+
+#productAddForm .step {
+    color: #fff;
+    background: #66666688;
+    padding: 10px 15px;
+    cursor: pointer;   
+    border-radius: 15px;
+
+}
+
+#productAddForm .stepActive {
+    background: #fff;
+    border: 1px solid rgba(1 2 3 / 40%);
+    color: #000;
+}
+
+#productAddForm .nav li .inactiveTab1:hover {
+    color: #fff;
+}
+
+
+/* ICONS STYLING */
+
+.productsIconDashSide {
+    width: 16px;
+    height: 16px;
+}

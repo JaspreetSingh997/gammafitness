@@ -416,7 +416,7 @@
             <h2>Log In</h2>
             <div class="loginForm">
 
-                <form action="" class="lgForm">
+                <form action="{{ route('postSaveEdit') }}" method="POST"  class="lgForm">
                     <div class="row">
                         <div class="col-25">
                             <label for="email">Email Address</label>
@@ -455,23 +455,51 @@
             // }
             
             
-            if (isset($_GET['login'])) {
+            if (isset($_POST['login'])) {
                 
                 //$conn = DB::new mysqli()
                 $conn = DB::connection()->getPDO();
                 //$conn = DB::connection()->getPDO();
             
-                $email = $_GET['email'];
-                $pass = $_GET['pass'];
+                $email = $_POST['email'];
+                $pass = $_POST['pass'];
+
+                // $query = "SELECT * FROM users WHERE email = $ AND pass = :pass";  
+                // $statement = $conn->prepare($query);  
+                // $statement->execute(  
+                //      array(  
+                //           'email'     =>     $_POST["email"],  
+                //           'pass'     =>     $_POST["pass"]  
+                //      )  
+                // );  
+
+                // $count = $statement->rowCount();  
+                // if($count > 0)  
+                // {  
+                //     $_SESSION["email"] = $_GET["email"];  
+                //     header("location: ../public/dash/");  
+                // }  
+                // else  
+                // {  
+                //     $message = '<p>Wrong Data</p>';  
+                // }  
             
-                $userCheck = $conn->query("SELECT email, pass, role FROM register WHERE email = '$email' AND 'pass' = '$pass'");
+                $userCheck = $conn->query("SELECT email, pass, role FROM register WHERE email = '$email' AND pass = '$pass'");
                 $data = $userCheck->setFetchMode(PDO::FETCH_ASSOC);
+                
                 if($userCheck)
                 {
+                    // $count = $userCheck->rowCount();  
                     // $_SESSION['Role'] = $data['Role']
                     // $_SESSION['userId'] = $data['userId'];
             
-                    echo "<script>alert('Login Successful');</script>";
+                    // echo "<script>alert('Login Successful');</script>";
+                    ?>
+                    <script>
+                        alert('Login Successfull');
+                        window.location.href = "../public/dash/";
+                    </script>
+                    <?php
                 }
 
                 else
