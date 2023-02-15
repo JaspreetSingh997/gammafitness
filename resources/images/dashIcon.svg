@@ -1,30 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW 2018 (64-Bit) -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="10.9488mm" height="5.7382mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 1094.88 573.82"
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="4.794mm" height="4.286mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21.24 17.38"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <style type="text/css">
    <![CDATA[
-    .str0 {stroke:white;stroke-width:40.64;stroke-miterlimit:22.9256}
-    .fil1 {fill:none}
     .fil0 {fill:white}
    ]]>
   </style>
  </defs>
  <g id="Layer_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_2094015360528">
-   <path class="fil0" d="M44.58 527.9c11.28,-607.28 956.16,-673.32 998.22,-5.08l-998.22 5.08zm-44.42 45.92c-15.27,-753.9 1097.25,-774.22 1094.71,-5.84l-1094.71 5.84z"/>
-   <path class="fil1 str0" d="M658.18 569.9c0.58,-4.5 0.88,-9.09 0.88,-13.75 0,-58.92 -47.7,-106.68 -106.54,-106.68 -58.84,0 -106.54,47.76 -106.54,106.68 0,3.54 0.17,7.03 0.51,10.48"/>
-   <path class="fil0" d="M471.24 464.71l-132.08 -170.18c-15.24,-22.86 20.32,-43.18 33.02,-27.96l130.13 170.66 -31.07 27.48z"/>
-   <rect class="fil0" transform="matrix(1.21038 0.236851 -0.192041 0.981387 109.767 435.704)" width="76.2" height="40.64" rx="20.32" ry="20.32"/>
-   <rect class="fil0" transform="matrix(-1.11584 0.525359 0.425967 0.904739 941.048 323.51)" width="76.2" height="40.64" rx="20.32" ry="20.32"/>
-   <rect class="fil0" transform="matrix(0.946883 0.790268 -0.640758 0.767743 214.644 237.95)" width="76.2" height="40.64" rx="20.32" ry="20.32"/>
-   <rect class="fil0" transform="matrix(0.395677 1.16814 -0.947141 0.320819 402.041 114.985)" width="76.2" height="40.64" rx="20.32" ry="20.32"/>
-   <rect class="fil0" transform="matrix(-0.0922208 1.22988 -0.997201 -0.0747736 614.937 95.4509)" width="76.2" height="40.64" rx="20.32" ry="20.32"/>
-   <rect class="fil0" transform="matrix(-0.73115 0.993243 -0.805332 -0.592824 820.821 183.764)" width="76.2" height="40.64" rx="20.32" ry="20.32"/>
+  <g id="_2150525711904">
+   <path class="fil0" d="M2.87 17.28c-0.36,0.18 -0.91,-0.02 -1.1,-0.31 -5.95,-10.4 4.2,-20.18 13.33,-15.97 0.95,0.62 0.08,2.1 -0.87,1.64 -0.81,-0.41 -1.75,-0.66 -2.8,-0.78l0.04 1.29c0.04,1.05 -1.67,1.21 -1.78,0l0.04 -1.32c-2.93,0.46 -5.17,1.85 -6.63,4.28l1.17 0.58c0.91,0.51 0.23,2.06 -0.8,1.6l-1.14 -0.55c-0.84,2.46 -0.73,4.96 0.53,7.52l1.06 -0.55c0.98,-0.31 1.59,0.93 0.8,1.64l-1.86 0.94z"/>
+   <path class="fil0" d="M18.29 17.3c0.34,0.15 0.71,0.09 1.06,-0.29 2.1,-3.32 2.54,-6.87 0.87,-10.71 -0.61,-0.94 -2.01,-0.23 -1.59,0.74 1.19,3.23 0.96,5.94 -0.34,8.26l-1.06 -0.55c-0.8,-0.39 -1.7,0.82 -0.85,1.56l1.91 0.99z"/>
+   <path class="fil0" d="M8.76 9.04c-2.18,2.17 0.89,6.26 3.69,3.65l5.68 -8.34c0.45,-0.94 -0.51,-1.78 -1.27,-1.27l-8.11 5.96zm1.35 1.27c-0.83,0.78 0.38,1.91 1.14,0.97l2.88 -3.97 -4.02 3z"/>
   </g>
  </g>
 </svg>

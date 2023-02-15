@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW 2018 (64-Bit) -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="54.864mm" height="54.864mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 5486.4 5486.4"
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="3.75mm" height="3.75mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1688.02 1688.02"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <style type="text/css">
    <![CDATA[
-    .fil1 {fill:none}
     .fil0 {fill:white}
    ]]>
   </style>
  </defs>
  <g id="Layer_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_2189661303792">
-   <polygon class="fil0" points="2924.84,2881.01 2925,2807.68 2973.8,2759.52 2974.16,2881.31 "/>
-   <line class="fil1" x1="2974.17" y1="2881.01" x2="2974.12" y2= "2882.9" />
-   <polygon class="fil0" points="3076.48,2880.82 3076.64,2730.25 3125.44,2681.46 3125.8,2881.31 "/>
-   <polygon class="fil0" points="3000.82,2880.82 3000.87,2732.98 3022.94,2710.93 3049.8,2737.7 3050.14,2881.31 "/>
-   <path class="fil0" d="M2912.13 2808.62l110.63 -108.59 36.87 35.57 66.92 -65.31 11.6 10.39 13.99 -51.78 -51.82 14.48 10.49 11.33 -51.18 50.99 -36.56 -35.57 -124.93 124.33c3.22,5.3 7.66,10.1 13.99,14.16z"/>
+  <g id="_2150452332400">
+   <polygon class="fil0" points="181.56,1688.02 173.65,1222.28 497.63,909.27 497.63,1688.02 "/>
+   <polygon class="fil0" points="1183.94,1688.02 1180.61,704.12 1504.59,385.98 1500.01,1688.02 "/>
+   <polygon class="fil0" points="689.36,1688.02 686.04,700.59 829.32,559.44 1010.09,747.31 1005.5,1688.02 "/>
+   <polygon class="fil0" points="90.05,1209.99 829.79,461.88 1074.75,708.9 1511.37,268.69 1594.38,352.36 1688.02,0 1342.9,93.24 1421.32,172.32 1074.75,521.62 833.77,278.66 -0,1119.21 "/>
   </g>
  </g>
 </svg>

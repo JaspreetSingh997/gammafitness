@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="3.80mm" height="4.8956mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 270.62 350.57"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:white;stroke-width:12.3;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2150349042672">
+   <polyline class="fil0 str0" points="73.22,53.54 19,53.54 6.15,62.75 6.15,333.89 17.57,344.42 254.48,344.42 264.47,332.58 264.47,62.75 253.05,53.54 195.96,53.54 "/>
+   <path class="fil0 str0" d="M113.19 28.52l-29.98 0c-5.7,0 -7.13,1.32 -7.13,6.59l0 34.21c0,5.27 1.43,7.91 7.13,7.91l102.76 0c5.7,0 7.13,-2.64 7.13,-7.91l0 -35.53c0,-5.27 -2.86,-5.27 -8.56,-5.27l-29.98 0"/>
+   <ellipse class="fil0 str0" cx="134.59" cy="24.58" rx="19.98" ry="18.43"/>
+   <polyline class="fil0 str0" points="40.4,120.66 60.38,139.09 90.35,103.55 "/>
+   <line class="fil0 str0" x1="108.9" y1="123.3" x2="228.79" y2= "123.3" />
+   <polyline class="fil0 str0" points="40.4,175.94 60.38,194.37 90.35,158.83 "/>
+   <line class="fil0 str0" x1="108.9" y1="178.58" x2="228.79" y2= "178.58" />
+   <polyline class="fil0 str0" points="40.4,232.54 60.38,250.97 90.35,215.43 "/>
+   <line class="fil0 str0" x1="108.9" y1="235.18" x2="228.79" y2= "235.18" />
+   <polyline class="fil0 str0" points="40.4,287.82 60.38,306.25 90.35,270.71 "/>
+   <line class="fil0 str0" x1="108.9" y1="290.46" x2="228.79" y2= "290.46" />
+  </g>
+ </g>
+</svg>

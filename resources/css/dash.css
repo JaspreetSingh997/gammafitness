@@ -595,5 +595,10 @@ input[type=submit]:hover {
 .shrinkprodMain {
     width: calc(100% - 16px) !important;
 }
+
+.nextBtns {
+    
+}
+
 /* TESTING TABS */
 

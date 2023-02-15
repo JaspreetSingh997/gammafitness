@@ -39,7 +39,7 @@
                         {{-- NO DROP - 1 --}}
                         <li id="dash-list-1" class="dash-list">
                             <div class="leftIcon">
-                                <ion-icon name="home-outline"></ion-icon>
+                                <img src="../../../resources/images/dashIcon.svg" alt="">
                             </div>
                             <div class="text">
                                 <a href="#">Dashboard</a>
@@ -188,45 +188,7 @@
                         {{-- DROP - 5 --}}
                         <li id="dash-list-5" class="dash-list">
                             <div class="leftIcon forWork">
-                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="4.54mm"
-                                    height="4.54mm" version="1.1"
-                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                                    viewBox="0 0 20.03 20.03" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <style type="text/css">
-                                            <![CDATA[
-                                            .fil0 {
-                                                fill: white
-                                            }
-                                            ]]>
-                                        </style>
-                                    </defs>
-                                    <g id="Layer_x0020_1">
-                                        <metadata id="CorelCorpID_0Corel-Layer" />
-                                        <g id="_2093761019152">
-                                            <g>
-                                                <rect class="fil0" x="3.54" y="2.47" width="5.96"
-                                                    height="1.27" />
-                                                <rect class="fil0" x="3.59" y="7.66" width="4.02"
-                                                    height="1.27" />
-                                                <rect class="fil0" x="9.67" y="7.66" width="4.02"
-                                                    height="1.27" />
-                                                <rect class="fil0" x="3.59" y="10.07" width="4.02"
-                                                    height="1.27" />
-                                                <rect class="fil0" x="9.67" y="10.07" width="4.02"
-                                                    height="1.27" />
-                                                <rect class="fil0" x="3.59" y="12.48" width="4.02"
-                                                    height="1.27" />
-                                                <rect class="fil0" x="9.67" y="12.48" width="4.02"
-                                                    height="1.27" />
-                                                <path class="fil0"
-                                                    d="M12.15 1.73l0 2.91 3.46 0.03 -3.46 -2.94zm-12.15 -1.73l0.03 20.03 17.25 0 0 -4.23 -1.43 0 0 2.96 -14.4 0.03 0 -17.52 9.22 0.03 0.03 4.61 5.12 0.03 0.03 1.87 1.43 0 -0.03 -3.49 -5 -4.28 -12.25 -0.03z" />
-                                            </g>
-                                            <path class="fil0"
-                                                d="M15.58 9.15l4.45 0 -0.35 0.77 -1.15 0c0.18,0.14 0.29,0.32 0.35,0.54l1.1 0 -0.4 0.73 -0.79 0c-0.18,0.59 -0.84,0.96 -1.81,1.19l2.34 2.07 -1.85 0 -2.12 -2 0 -0.77 1.15 0c0.31,-0.14 0.52,-0.3 0.62,-0.46l-1.94 0 0.35 -0.77 1.63 0c-0.01,-0.21 -0.24,-0.39 -0.57,-0.54l-1.41 0 0.4 -0.77z" />
-                                        </g>
-                                    </g>
-                                </svg>
+                                <img src="../../../resources/images/invoiceIcon.svg" alt="">
 
                             </div>
                             <div class="text">
@@ -245,7 +207,7 @@
                         {{-- DROP - 6 --}}
                         <li id="dash-list-6" class="dash-list">
                             <div class="leftIcon forWork">
-                                <img src="../../resources/images/categoriesIcon.svg" alt="">
+                                <img src="../../../resources/images/categoriesIcon.svg" alt="">
                             </div>
                             <div class="text">
                                 <a href="#">Categories</a>
@@ -263,7 +225,7 @@
                         {{-- DROP - 7 --}}
                         <li id="dash-list-7" class="dash-list">
                             <div class="leftIcon">
-                                <img src="/../../resources/images/salesIcon.svg" alt="">
+                                <img src="../../../resources/images/salesIcon.svg" alt="">
                             </div>
                             <div class="text">
                                 <a href="#">Sales</a>
@@ -281,7 +243,7 @@
                         {{-- DROP - 8 --}}
                         <li id="dash-list-8" class="dash-list">
                             <div class="leftIcon">
-                                <ion-icon name="cart-outline"></ion-icon>
+                                <img src="../../../resources/images/inventoryIcon.svg" alt="">
                             </div>
                             <div class="text">
                                 <a href="#">Inventory</a>
@@ -356,7 +318,7 @@
                         {{-- NO DROP - 12 --}}
                         <li id="dash-list-12" class="dash-list">
                             <div class="leftIcon">
-                                <ion-icon name="clipboard-outline"></ion-icon>
+                                <img src="../../../resources/images/taxesIcon.svg" alt="Taxes Icon">
                             </div>
                             <div class="text">
                                 <a href="#">Taxes</a>
@@ -366,7 +328,7 @@
                         {{-- NO DROP - 13 --}}
                         <li id="dash-list-13" class="dash-list">
                             <div class="leftIcon">
-                                <ion-icon name="document-text-outline"></ion-icon>
+                                <img src="../../../resources/images/shippingIcon.svg" alt="Shipping SVG">
                             </div>
                             <div class="text">
                                 <a href="#">Shipping</a>
@@ -376,7 +338,7 @@
                         {{-- DROP - 14 --}}
                         <li id="dash-list-14" class="dash-list">
                             <div class="leftIcon">
-                                <ion-icon name="laptop-outline"></ion-icon>
+                                <img src="../../../resources/images/couponsIcon.svg" alt="Coupon SVG">
                             </div>
                             <div class="text">
                                 <a href="#">Coupon</a>
@@ -435,11 +397,221 @@
                     </div>
 
                     <div class="productAddBox">
-                        <div class="pAddBox1">
-                            <form action="" id="productAddForm">
+                        <form action="add/" METHOD="POST">
+                            <input type="submit" name="skuSub" value="Create a new Product" />
+                        </form>
+                        <?php
+                        if(isset($_POST['skuSub']))
+                        {
+                            
+                            $skuSel = DB::select('SELECT sku FROM product_sku ORDER BY sku DESC LIMIT 1');
+                            //$rs = $skuSel->fetch(MYSQLI_ASSOC);
+                            $data = $skuSel->fetch(PDO::FETCH_ASSOC);
+                            $sku = $data['sku'];
 
+                            print $sku;
+                       
+                        ?>
+                        
+                        <div class="pAddBox1">
+                            <form action="" id="productAddForm" METHOD="POST">
+                                <div class="tab" id="tab-1">
+                                    <div class="productDetailsBox">
+                                        <div class="pBoxHeading">
+                                            <h1>Add a Product</h1>
+                                        </div>
+                                        <div class="pBoxContainer">
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="pname">Product Name</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="text" name="pname" id="pname"
+                                                        placeholder="Product Name" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="sku">SKU</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="text" name="sku" id="sku"
+                                                        placeholder="Product SKU" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="quantity">Quantity</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="text" name="quantity" id="quantity"
+                                                        placeholder="Product Quantity" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="pImage">Product Image</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="file" name="pImage" id="pImage" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="bImage">Banner Image</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="file" name="bImage" id="bImage" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="gImage">Gallery Images</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="file" name="gImage" id="gImage" multiple />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="description">Product Description</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Product Description"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="Stock">Stock?</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <select name="stock" id="Stock">
+                                                        <option value="" hidden>Select Stock Type</option>
+                                                        <option value="yes">In Stock</option>
+                                                        <option value="no">Out of Stock</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="price">Price</label>
+                                                </div>
+                                                <div class="col-25 prices">
+                                                    <input type="text" name="oprice" id="price"
+                                                        placeholder="Original Price" />
+                                                    <input type="text" name="nprice" id="price"
+                                                        placeholder="Discounted Price" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pBoxHeading forLandingCheck">
+                                            <h1>Want a Landing Page?</h1>
+                                            <input id="landingCheckBox" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <div class="pBoxContainer landingP">
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="pname">Product Name</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="text" name="pname" id="pname"
+                                                        placeholder="Product Name" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="sku">SKU</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="text" name="sku" id="sku"
+                                                        placeholder="Product SKU" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="quantity">Quantity</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="text" name="quantity" id="quantity"
+                                                        placeholder="Product Quantity" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="pImage">Product Image</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="file" name="pImage" id="pImage" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="bImage">Banner Image</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="file" name="bImage" id="bImage" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="gImage">Banner Image</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="file" name="gImage" id="gImage" multiple />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="description">Product Description</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Product Description"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="Stock">Stock?</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <select name="stock" id="Stock">
+                                                        <option value="" hidden>Select Stock Type</option>
+                                                        <option value="yes">In Stock</option>
+                                                        <option value="no">Out of Stock</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="price">Price</label>
+                                                </div>
+                                                <div class="col-25 prices">
+                                                    <input type="text" name="oprice" id="price"
+                                                        placeholder="Original Price" />
+                                                    <input type="text" name="nprice" id="price"
+                                                        placeholder="Discounted Price" />
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="nextBtns">
+                                        <a id="next" href="#">Next</a>
+                                    </div>
+                                </div>
+                                <div class="tab" id="tab-2">
+
+                                </div>
+                                <div class="tab" id="tab-2">
+                                     
+                                </div>
                             </form>
                         </div>
+                        <?php
+                         } 
+                        ?>
                     </div>
                 </div>
                 {{-- <div class="productAddHeader">
@@ -483,7 +655,6 @@
     </script>
 
     <script>
-
         $('#dash-list-2').click(function() {
             var dashDrop = $('#dropdown-2');
             if (dashDrop.hasClass('dropDownOpen')) {

@@ -42,4 +42,5 @@ Route::get('/dash', [gammaController::class, 'dash']);
 
 Route::get('/dash/products', [gammaController::class, 'products']);
 
-Route::get('/dash/products/add', [gammaController::class, 'productadd']);
+Route::match(['GET', 'POST'], '/dash/products/add', [gammaController::class, 'productadd']);
+
