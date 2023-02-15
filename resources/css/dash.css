@@ -161,7 +161,8 @@ body {
 
 .dashNavbar li .text {
     padding: 0 10px;
-    transform: translateY(-2px);
+    transform: translateY(-2px), scaleX(1);
+
 }
 
 .dashNavbar li .dropDown {
@@ -211,6 +212,7 @@ body {
 
 .dashFooterPart .chevLeft {
     padding: 10px;
+    cursor: pointer;
 }
 
 .dashFooterPart .chevLeft ion-icon {
@@ -387,7 +389,7 @@ body {
 }
 
 .pAddContainer .productAddMain {
-    width: 82% !important;
+    width: 82%;
     height: 100vh;
     overflow: scroll;
 }
@@ -541,3 +543,57 @@ input[type=submit]:hover {
     width: 16px;
     height: 16px;
 }
+
+.dropDown {
+    display: none;
+}
+
+.dropDownOpen {
+    display: block;
+}
+
+#chevClosed {
+    display: flex;
+    width: 50%;
+    align-items: flex-end;
+    transform: translateX(130%);
+}
+
+#chevOpened {
+    display: block;
+    width: 50%;
+    align-items: flex-end;
+    transform: translateX(130%);
+}
+
+.shrinkItBro {
+    transform: scaleX(0);
+    width: 0;
+}
+
+.shrinkSideBro {
+    width: calc(0% + 60px);
+}
+
+.shrinkVersion {
+    visibility: hidden;
+    width: 0;
+}
+
+.shrinkSideChev {
+    padding: 10px 0;
+}
+
+.shrinkcLogo {
+    transform: translate(0) !important;
+}
+
+.shrinkSideHeader {
+    height: 11.5vh;
+}
+
+.shrinkprodMain {
+    width: calc(100% - 16px) !important;
+}
+/* TESTING TABS */
+
