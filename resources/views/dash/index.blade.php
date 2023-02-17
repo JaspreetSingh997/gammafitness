@@ -296,7 +296,7 @@
                         <div class="ovCardContainer">
                             <div class="ovCard">
                                 <div class="ovHeading">
-                                    <h3>Total Clients</h3>
+                                    <h3>Total Orders</h3>
                                     <p>9</p>
 
                                 </div>
@@ -306,7 +306,7 @@
                             </div>
                             <div class="ovCard">
                                 <div class="ovHeading">
-                                    <h3>Total Employees</h3>
+                                    <h3>Total Customers</h3>
                                     <p>10</p>
 
                                 </div>
@@ -316,7 +316,7 @@
                             </div>
                             <div class="ovCard">
                                 <div class="ovHeading">
-                                    <h3>Total Projects</h3>
+                                    <h3>Sales</h3>
                                     <p>8</p>
 
                                 </div>
@@ -336,8 +336,8 @@
                             </div>
                             <div class="ovCard">
                                 <div class="ovHeading">
-                                    <h3>Hours Logged</h3>
-                                    <p>55 Hrs</p>
+                                    <h3>Pending orders</h3>
+                                    <p>55</p>
 
                                 </div>
                                 <div class="ovIcon">
@@ -346,7 +346,7 @@
                             </div>
                             <div class="ovCard">
                                 <div class="ovHeading">
-                                    <h3>Pending tasks</h3>
+                                    <h3>Quotations Sent</h3>
                                     <p>13</p>
 
                                 </div>
@@ -356,8 +356,8 @@
                             </div>
                             <div class="ovCard">
                                 <div class="ovHeading">
-                                    <h3>Today Attendance</h3>
-                                    <p>0/10</p>
+                                    <h3>Sales Returns</h3>
+                                    <p>10</p>
 
                                 </div>
                                 <div class="ovIcon">

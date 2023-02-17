@@ -1,3 +1,6 @@
+<?php
+$conn = new mysqli('localhost', 'root', '', 'gammafitness');
+?>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -261,7 +264,7 @@
                         {{-- DROP - 9 --}}
                         <li id="dash-list-9" class="dash-list">
                             <div class="leftIcon">
-                                <ion-icon name="headset-outline"></ion-icon>
+                                <img src="../../../resources/images/customerIcon.svg" alt="">
                             </div>
                             <div class="text">
                                 <a href="#">Customers</a>
@@ -290,23 +293,7 @@
                         {{-- NO DROP - 11 --}}
                         <li id="dash-list-11" class="dash-list">
                             <div class="leftIcon">
-                                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2.54mm"
-                                    height="2.54mm" version="1.1"
-                                    style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                                    viewBox="0 0 508 508" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <clipPath id="id0">
-                                            <rect width="508" height="508" />
-                                        </clipPath>
-                                    </defs>
-                                    <g id="Layer_x0020_1">
-                                        <metadata id="CorelCorpID_0Corel-Layer" />
-                                        <g style="clip-path:url(#id0)">
-                                            <image x="-0" y="0.02" width="507.98" height="507.98"
-                                                xlink:href="3.svg_Images\3.svg_ImgID1.png" />
-                                        </g>
-                                    </g>
-                                </svg>
+                                <img src="../../../resources/images/productPaymentIcon.svg" alt="">
                             </div>
                             <div class="text">
                                 <a href="#">Product Payments</a>
@@ -397,22 +384,40 @@
                     </div>
 
                     <div class="productAddBox">
-                        <form action="add/" METHOD="POST">
-                            <input type="submit" name="skuSub" value="Create a new Product" />
-                        </form>
                         <?php
-                        if(isset($_POST['skuSub']))
+                        if (isset($_POST['skuSub'])) 
                         {
-                            
-                            $skuSel = DB::select('SELECT sku FROM product_sku ORDER BY sku DESC LIMIT 1');
-                            //$rs = $skuSel->fetch(MYSQLI_ASSOC);
-                            $data = $skuSel->fetch(PDO::FETCH_ASSOC);
-                            $sku = $data['sku'];
+                           
+                           $availableSkuQ = $conn->query("SELECT sku FROM product_sku ORDER BY sku DESC LIMIT 1");
+                           $availSku = $availableSkuQ->fetch_array();
+                
+                           //$data = $slctSku->fetch_array();
+                           $currD = date('d-m-y h:m:s A');
+                           if ($availableSkuQ->num_rows == 1) {
+                               $newSku = $availSku['sku'] + 1;
+                               echo "<script>If Worked</script>";
+                               $ins = $conn->query("INSERT INTO product_sku (sku, created_at, updated_at) VALUES ('$newSku', '$currD', '$currD')");
 
-                            print $sku;
-                       
-                        ?>
-                        
+                           } else {
+                               $checkIfHave = $conn->query("SELECT sku FROM product_sku");
+                               if($checkIfHave->num_rows < 1)
+                               {
+                                   $newSku = 8001;
+                                   $ins = $conn->query("INSERT INTO product_sku (sku, created_at, updated_at) VALUES ('$newSku', '$currD', '$currD')");
+                               }
+                               else
+                               {
+                                   $newSku = $availSku['sku'];
+                                   $ins = $conn->query("INSERT INTO product_sku (sku, created_at, updated_at) VALUES ('$newSku', '$currD', '$currD')");
+                               }
+                           }
+
+                            //$rs = $skuSel->fetch(MYSQLI_ASSOC);
+                            
+                            //$newSku = $data['sku'] + 1;
+
+                            //print_r($sku);
+                            ?>
                         <div class="pAddBox1">
                             <form action="" id="productAddForm" METHOD="POST">
                                 <div class="tab" id="tab-1">
@@ -431,12 +436,18 @@
                                                 </div>
                                             </div>
                                             <div class="row">
+                                                <?php
+                                                $avkSkuQ = $conn->query('SELECT sku FROM product_sku ORDER BY sku DESC LIMIT 1');
+                                                $avlD = $avkSkuQ->fetch_array();
+                                                $avlSku = $avlD['sku'];
+                                                ?>
                                                 <div class="col-25">
                                                     <label for="sku">SKU</label>
                                                 </div>
                                                 <div class="col-75">
                                                     <input type="text" name="sku" id="sku"
-                                                        placeholder="Product SKU" />
+                                                        placeholder="Product SKU" value='<?php echo $avlSku; ?>'
+                                                        readonly />
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -598,22 +609,71 @@
                                         </div>
                                     </div>
                                     <div class="nextBtns">
-                                        <a id="next" href="#">Next</a>
+                                        <a id="tab2" href="#">Next</a>
                                     </div>
                                 </div>
-                                <div class="tab" id="tab-2">
 
-                                </div>
                                 <div class="tab" id="tab-2">
-                                     
+                                    <p>Tab 2 Opened</p>
+                                    <div class="nextBtns">
+                                        <a id="tab3" href="#">Next</a>
+                                    </div>
+                                </div>
+
+                                <div class="tab" id="tab-3">
+                                    <p>Tab 3 Opened</p>
+                                    <div class="nextBtns">
+                                        <a id="tab4" href="#">Submit</a>
+                                    </div>
                                 </div>
                             </form>
                         </div>
+
                         <?php
                          } 
-                        ?>
+                         else {
+                            ?>
+                        <form action="" METHOD="POST">
+                            @csrf
+                            <!-- {{ csrf_field() }} -->
+                            <!-- <input type="text" name="newSku" placeholder="Enter SKU" /> -->
+                            <input type="submit" name="skuSub" value="Create a new Product" />
+                        </form>
+                        <?php
+                        }
+                         ?>
+
+
                     </div>
                 </div>
+                <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('#tab-1').addClass('tabToggle');
+                        $('#tab-2').removeClass('tabToggle');
+                        $('#tab-3').removeClass('tabToggle');
+
+                        $('#tab2').click(function() {
+                            if ($(this) == true) {
+                                $('#tab-1').removeClass('tabToggle');
+                                $('#tab-2').addClass('tabToggle');
+                                $('#tab-3').addClass('tabToggle');
+                            } else {
+                                $('#tab-1').removeClass('tabToggle');
+                                $('#tab-2').removeClass('tabToggle');
+                                $('#tab-3').removeClass('tabToggle');
+                            }
+                        })
+
+                        $('#tab3').click(function() {
+                            if ($(this) == true) {
+                                $('#tab-1').removeClass('tabToggle');
+                                $('#tab-2').removeClass('tabToggle');
+                                $('#tab-3').addClass('tabToggle');
+                            }
+                        })
+                    })
+                </script>
                 {{-- <div class="productAddHeader">
                     <div class="dMainTitle">
                         <h2>Dashboard</h2>

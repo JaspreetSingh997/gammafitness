@@ -602,3 +602,14 @@ input[type=submit]:hover {
 
 /* TESTING TABS */
 
+.pAddBox {
+   
+}
+
+#tab-1, #tab-2, #tab-3 {
+    display: none;
+}
+
+.tabToggle {
+    display: block !important;
+}
