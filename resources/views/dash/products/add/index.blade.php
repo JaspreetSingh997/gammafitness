@@ -616,6 +616,7 @@ $conn = new mysqli('localhost', 'root', '', 'gammafitness');
                                 <div class="tab" id="tab-2">
                                     <p>Tab 2 Opened</p>
                                     <div class="nextBtns">
+                                        <a id="prev1" href="#">Prev</a>
                                         <a id="tab3" href="#">Next</a>
                                     </div>
                                 </div>
@@ -623,7 +624,8 @@ $conn = new mysqli('localhost', 'root', '', 'gammafitness');
                                 <div class="tab" id="tab-3">
                                     <p>Tab 3 Opened</p>
                                     <div class="nextBtns">
-                                        <a id="tab4" href="#">Submit</a>
+                                        <a id="prev2" href="#">Prev</a>
+                                        <input type="submit" id="tab4" name="submit" value="Submit" />
                                     </div>
                                 </div>
                             </form>
@@ -654,22 +656,33 @@ $conn = new mysqli('localhost', 'root', '', 'gammafitness');
                         $('#tab-3').removeClass('tabToggle');
 
                         $('#tab2').click(function() {
-                            if ($(this) == true) {
+                            if ($(this)) {
                                 $('#tab-1').removeClass('tabToggle');
                                 $('#tab-2').addClass('tabToggle');
-                                $('#tab-3').addClass('tabToggle');
-                            } else {
+                                $('#tab-3').removeClass('tabToggle');
+                            }   
+                        })
+
+                        $('#tab3').click(function() {
+                            if ($(this)) {
                                 $('#tab-1').removeClass('tabToggle');
+                                $('#tab-2').removeClass('tabToggle');
+                                $('#tab-3').addClass('tabToggle');
+                            }
+                        })
+
+                        $('#prev1').click(function() {
+                            if ($(this)) {
+                                $('#tab-1').addClass('tabToggle');
                                 $('#tab-2').removeClass('tabToggle');
                                 $('#tab-3').removeClass('tabToggle');
                             }
                         })
-
-                        $('#tab3').click(function() {
-                            if ($(this) == true) {
+                        $('#prev2').click(function() {
+                            if ($(this)) {
                                 $('#tab-1').removeClass('tabToggle');
-                                $('#tab-2').removeClass('tabToggle');
-                                $('#tab-3').addClass('tabToggle');
+                                $('#tab-2').addClass('tabToggle');
+                                $('#tab-3').removeClass('tabToggle');
                             }
                         })
                     })
