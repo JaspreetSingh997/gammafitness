@@ -387,7 +387,6 @@ $conn = new mysqli('localhost', 'root', '', 'gammafitness');
                         <?php
                         if (isset($_POST['skuSub'])) 
                         {
-                           
                            $availableSkuQ = $conn->query("SELECT sku FROM product_sku ORDER BY sku DESC LIMIT 1");
                            $availSku = $availableSkuQ->fetch_array();
                 
@@ -417,9 +416,12 @@ $conn = new mysqli('localhost', 'root', '', 'gammafitness');
                             //$newSku = $data['sku'] + 1;
 
                             //print_r($sku);
+                            // @include('');
                             ?>
                         <div class="pAddBox1">
                             <form action="" id="productAddForm" METHOD="POST">
+                                @csrf
+                                <!-- {{ csrf_field() }} -->
                                 <div class="tab" id="tab-1">
                                     <div class="productDetailsBox">
                                         <div class="pBoxHeading">
@@ -522,97 +524,116 @@ $conn = new mysqli('localhost', 'root', '', 'gammafitness');
                                         </div>
                                         <div class="pBoxContainer landingP">
                                             <div class="row">
+                                                <center><h1>Product Banner Image</h1></center>
+                                            </div>
+                                            <div class="row">
                                                 <div class="col-25">
-                                                    <label for="pname">Product Name</label>
+                                                    <label for="pBanner">Product Main Banner Image</label>
                                                 </div>
                                                 <div class="col-75">
-                                                    <input type="text" name="pname" id="pname"
-                                                        placeholder="Product Name" />
+                                                    <input type="file" name="prodMainBImg" id="pBanner"
+                                                        placeholder="Add Product Banner Image" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <center><h1>Product Description</h1></center>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="descP">Product Description</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <textarea name="descP" placeholder="Product Description" id="descP" cols="30" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <center><h1>Product Features</h1></center>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="featImage">Features Image</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="file" name="featImage" id="featImage"
+                                                        placeholder="Product Feature Image" />
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-25">
-                                                    <label for="sku">SKU</label>
+                                                    <label for="featText1">Features Text 1</label>
                                                 </div>
                                                 <div class="col-75">
-                                                    <input type="text" name="sku" id="sku"
-                                                        placeholder="Product SKU" />
+                                                    <input type="text" name="fetureText1" id="featText1"
+                                                        placeholder="Product Feature Text 1" required />
                                                 </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="featText2">Features Text 2</label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="text" name="fetureText2" id="featText2"
+                                                    placeholder="Product Feature Text 2"  required />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <center><h1>Product Quantity</h1></center>
                                             </div>
                                             <div class="row">
                                                 <div class="col-25">
                                                     <label for="quantity">Quantity</label>
                                                 </div>
                                                 <div class="col-75">
-                                                    <input type="text" name="quantity" id="quantity"
+                                                    <input type="text" name="
+                                                    " id="quantity"
                                                         placeholder="Product Quantity" />
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-25">
-                                                    <label for="pImage">Product Image</label>
-                                                </div>
-                                                <div class="col-75">
-                                                    <input type="file" name="pImage" id="pImage" />
-                                                </div>
+                                                <center><h1>Product Slider</h1></center>
                                             </div>
                                             <div class="row">
                                                 <div class="col-25">
-                                                    <label for="bImage">Banner Image</label>
+                                                    <label for="pSliderImages">Product Slider Images</label>
                                                 </div>
                                                 <div class="col-75">
-                                                    <input type="file" name="bImage" id="bImage" />
+                                                    <input type="file" name="pSliderImages" id="pSliderImages" multiple />
                                                 </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <center><h1>Product GIF</h1></center>
                                             </div>
                                             <div class="row">
                                                 <div class="col-25">
-                                                    <label for="gImage">Banner Image</label>
+                                                    <label for="gifP">Product GIF Banner Image</label>
                                                 </div>
                                                 <div class="col-75">
-                                                    <input type="file" name="gImage" id="gImage" multiple />
+                                                    <input type="file" name="prodGif" id=gifP />
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-25">
-                                                    <label for="description">Product Description</label>
-                                                </div>
-                                                <div class="col-75">
-                                                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Product Description"></textarea>
-                                                </div>
+                                                <center><h1>Product Video</h1></center>
                                             </div>
                                             <div class="row">
                                                 <div class="col-25">
-                                                    <label for="Stock">Stock?</label>
-                                                </div>
-                                                <div class="col-75">
-                                                    <select name="stock" id="Stock">
-                                                        <option value="" hidden>Select Stock Type</option>
-                                                        <option value="yes">In Stock</option>
-                                                        <option value="no">Out of Stock</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-25">
-                                                    <label for="price">Price</label>
+                                                    <label for="videoP">Product Banner Image</label>
                                                 </div>
                                                 <div class="col-25 prices">
-                                                    <input type="text" name="oprice" id="price"
-                                                        placeholder="Original Price" />
-                                                    <input type="text" name="nprice" id="price"
-                                                        placeholder="Discounted Price" />
+                                                    <input type="file" name="prodGif" id=gifP />
                                                 </div>
-
-
                                             </div>
-
                                         </div>
                                     </div>
                                     <div class="nextBtns">
-                                        <a id="tab2" href="#">Next</a>
+                                        <input type="submit" id="tab2" name="pBox1" value="Next">
                                     </div>
                                 </div>
+                            </form>
 
+                            <form action="" method="POST" id="productAddForm"></form>
+                                @csrf
+                                <!-- {{ csrf_field() }} -->
                                 <div class="tab" id="tab-2">
                                     <p>Tab 2 Opened</p>
                                     <div class="nextBtns">
@@ -620,7 +641,11 @@ $conn = new mysqli('localhost', 'root', '', 'gammafitness');
                                         <a id="tab3" href="#">Next</a>
                                     </div>
                                 </div>
+                            </form>
 
+                            <form action="" method="POST" id="productAddForm">
+                                @csrf
+                                <!-- {{ csrf_field() }} -->
                                 <div class="tab" id="tab-3">
                                     <p>Tab 3 Opened</p>
                                     <div class="nextBtns">
