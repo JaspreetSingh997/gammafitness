@@ -85,4 +85,14 @@
 
         }
     }
+
+    if(isset($_GET['id']))
+    {
+        $productId = $_GET['id'];
+
+        $$conn->query("SELECT * FROM products WHERE id = '". $productId ."'");
+        
+        
+    }
+    else{}
 ?>

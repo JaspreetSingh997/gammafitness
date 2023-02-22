@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+    <?php 
+        if(isset($_GET['id']))
+        {
+            $pid = $_GET['id'];
+            $conn = new mysqli('localhost', 'root', '', 'gammafitness');
+
+            $res = $conn->query("SELECT * FROM register WHERE id = $pid");
+
+            echo $pid;
+            // var_dump($res);
+
+        }
+    ?>
 
 <head>
     <meta charset="UTF-8">
@@ -17,6 +30,7 @@
 </head>
 
 <body>
+    
     <section id="productDescPage">
         <div class="mainContainer">
             <div class="leftImageContainer">

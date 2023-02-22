@@ -65,8 +65,12 @@ body {
 
 .sideHeaderPart .companyName {
     color: #fff;
-    font-size: 9pt;
+    
     display: flex;
+}
+
+.sideHeaderPart .companyName h1 {
+    font-size: 12pt;
 }
 
 .sideHeaderPart .companyName .companyLogo {
@@ -103,7 +107,7 @@ body {
 
 .userLogged .name p {
     color: #ccc;
-    font-size: 10pt;
+    font-size: 11pt;
     transform: translate(10px, -10px);
 }
 
@@ -142,6 +146,7 @@ body {
 .dashNavbar li a {
     text-decoration: none;
     color: #ccc;
+    font-size: 11pt;
 }
 
 
@@ -180,6 +185,10 @@ body {
     text-align: right;
     width: 100%;
     padding: 0 15px;
+}
+
+.dashNavbar li .rightIcon ion-icon {
+    font-size: 12pt;
 }
 
 .dashNavbar li .withGiftDrop {
@@ -626,4 +635,26 @@ input[type=submit]:hover {
 
 #prev1:hover {
     background: #FF323B;
+}
+
+#productManageCustom {
+    width: 100%;
+}
+
+#productManageCustom .ibox-title h2 {
+    font-size: 20pt;
+    padding: 0 20px;
+}
+
+#productManageCustom .pull-right .btn-success {
+    font-size: 13pt;
+}
+
+#productManageCustom #table th, td
+{
+    font-size: 11pt;
+}
+
+#productManageCustom #table th {
+    text-transform: uppercase;
 }

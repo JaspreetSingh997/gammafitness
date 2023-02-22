@@ -8,6 +8,6 @@ window.addEventListener('scroll', function() {
 const bgTwo = document.getElementById('headertwo');
 
 window.addEventListener('scroll', function() {
-    bgTwo.style.backgroundSize = 100 - +this.window.PageYOffset/24+'%';
-    bgTwo.style.opacity = 1 - +this.window.pageYOffset / 700+ '';
+    bgTwo.style.backgroundSize = 100 - +this.window.PageYOffset/12+'%';
+    bgTwo.style.opacity = 1 - +this.window.pageYOffset / 3500+ '';
 })

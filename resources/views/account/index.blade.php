@@ -9,6 +9,7 @@ $test = '';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login / Register - Gamma Fitness</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <link rel="stylesheet" href="../resources/css/app.css">
 </head>
@@ -85,7 +86,7 @@ $test = '';
                 echo "<script>alert('Login Successful'); </script>";
                 ?>
                 <script>
-                    window.location.href= "../public/dash/";
+                    window.location.href= "/dash";
                 </script>
                 <?php
             } else {

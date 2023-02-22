@@ -527,3 +527,11 @@
     font-size: 4rem;
     font-family: 'phudu', cursive;
 }
+
+.featuresContainer {
+    display: flex;
+}
+
+.description {
+    
+}
