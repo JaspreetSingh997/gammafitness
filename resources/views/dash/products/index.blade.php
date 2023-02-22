@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Products - Gamma Fitness</title>
 
-    <link rel="stylesheet" href="../../resources/css/dash.css">
+    <link rel="stylesheet" href="{{asset('css/dash.css')}}">
 
     {{-- Linking FontAwesome --}}
     <script src="https://kit.fontawesome.com/28535bdb92.js" crossorigin="anonymous"></script>
@@ -38,7 +38,7 @@
                         
                     </div>
                     <div class="productAdd">
-                        <a href="./products/add">Add Product</a>
+                        <a href="add">Add Product</a>
                     </div>
                 </div>
             </div>

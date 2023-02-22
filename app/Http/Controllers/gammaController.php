@@ -117,4 +117,9 @@ class gammaController extends Controller
     public function changeView() {
         return view('product.view.change.changePDetails');
     }
+
+    public function productView() 
+    {
+        return view('product.index');
+    }
 }

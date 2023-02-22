@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <link rel="stylesheet" href="../resources/css/app.css">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
                         </div>
                     </div> --}}
                     <div class="lIsliderSlide">
-                        <img src="../resources/images/final.jpg" alt="Multi Storage Rack">
+                        <img src="{{asset('images/final.jpg')}}" alt="Multi Storage Rack">
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                             <p>Jaspreet Singh</p>
                         </div>
                         <div class="acntImg">
-                            <img src="../resources/images/userImg.png" alt="" />
+                            <img src="{{asset('images/userImg.png')}}" alt="" />
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D&family=Poppins&family=Phudu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'K2D', sans-serif;
+}
+
+#productLandingHome {
+    max-width: 100%;
+    width: 100%;
+    /* background: linear-gradient(#119999,#0A6363, #024646); */
+    background: linear-gradient(#191919, #252525, #1B1212);
+}
+
+#productLandingHome::-webkit-scrollbar {
+    width: 6px;
+    background: rgb(1 2 3 / 40%);
+}
+
+#productLandingHome::-webkit-scrollbar-thumb {
+    background: rgb(1 2 3 / 40%);
+    border-radius: 10px;
+}
+
+.backgroundclip {
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.textclip {
+    color: #fff;
+    background-image: repeating-linear-gradient(90deg, rgba(252, 176, 69, .9), rgba(253, 29, 29, .8));
+    -webkit-background-clip: text;
+    background-repeat: repeat;
+    height: 100vh;
+    -webkit-text-fill-color: transparent;
+    font-size: 30pt;
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+
+/* Product Header */
+
+.productHead {
+    width: 100%;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    backdrop-filter: blur(5px);
+
+}
+
+#navbar {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+}
+
+#navbar .productLogo {
+    padding: 10px 15px;
+    width: 15%;
+}
+
+#navbar .nav {
+    width: 100%;
+    display: flex;
+    position: relative;
+    left: 60%;
+}
+
+#navbar .nav li {
+    list-style: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#navbar .nav .buy li {
+    background: linear-gradient(rgba(252, 176, 69, .9), rgba(253, 29, 29, .8));
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 10pt;
+    margin: 8px 40px;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+}
+
+#navbar .nav .buy li:hover {
+    background: linear-gradient(90deg, rgba(252, 176, 69, .9), rgba(253, 29, 29, .8));
+    transition: 250ms ease-in-out;
+}
+
+.headBckFix {
+    background: rgba(35, 34, 34, .3);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    transition: 350ms ease-in-out;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 20;
+}
+
+.headBckFix>#navbar {
+    border: none;
+    transition: 350ms ease-in-out;
+}
+
+.dumbellAnimPanel {
+    max-width: 100%;
+    width: 100%;
+    height: 230vh;
+    /* background: linear-gradient(#119999,#0A6363, #024646); */
+    transition: 350ms ease-in-out;
+}
+
+.dumbellOverview {
+    width: 80%;
+    height: inherit;
+    margin: 0 auto;
+    background-attachment: fixed;
+}
+
+.dumbellOverview .dumbellTop {
+    position: absolute;
+    top: 0;
+    width: 1080px;
+    z-index: 4;
+    position: fixed;
+}
+
+.dumbellOverview .bottomStand {
+    position: absolute;
+    bottom: -150%;
+    display: flex;
+    width: 1080px;
+}
+
+/* 
+#imageToMove {
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-name: move;
+    animation-delay: calc(var(--epoch) * -1s);
+    }
+    
+    @-webkit-keyframes move {
+    
+    0% {
+     transform: translateY(0);
+    }
+    100% {
+     transform: translateY(var(--maximum));
+    }
+    }
+    
+    @keyframes move {
+    
+    0% {
+     transform: translateY(0);
+    }
+    100% {
+     transform: translateY(var(--maximum));
+    }
+} */
+
+.changePos {
+    position: absolute !important;
+    top: 120% !important;
+    z-index: 1;
+}
+
+
+.text {
+    color: transparent;
+    font-size: 40pt;
+    letter-spacing: 10px;
+    float: right;
+    position: absolute;
+    top: 40%;
+    right: 60%;
+    opacity: 0;
+    transition: 450ms ease-in-out;
+    -webkit-text-stroke: 2px #cd6934;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.textoneAppear {
+    opacity: 1;
+    transition: 450ms ease-in-out;
+}
+
+
+.texttwo {
+    color: #fff;
+    font-size: 50pt;
+    float: right;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    opacity: 0;
+    transition: 450ms ease-in-out;
+    color: #cd6934;
+    z-index: 10;
+}
+
+
+.texttwoAppear {
+    opacity: 1;
+    transition: 450ms ease-in-out;
+}
+
+.secondPane {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Panels. */
+.splitview {
+    position: relative;
+    width: 100%;
+    min-height: 45vw;
+    overflow: hidden;
+}
+
+.splitview .panel .content .description {
+    z-index: 10;
+}
+
+.panel {
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    overflow: hidden;
+}
+
+.panel .content {
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    color: #fff;
+}
+
+.panel .description {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.panel img {
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.bottom {
+    z-index: 1;
+}
+
+.bottom .description {
+    right: 5%;
+}
+
+.top {
+    background-color: #f1ff30;
+    z-index: 2;
+    width: 50vw;
+
+    /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
+}
+
+.top .description {
+    left: 5%;
+}
+
+/* Handle. */
+/* #fdab00 */
+.handle {
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: #adff2f;
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+/* Skewed. */
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+.panel .content .description {
+    color: #000;
+}
+
+.panel.bottom .content .description
+{
+    color: #fff;
+}
+/* Responsive. */
+@media (max-width: 900px) {
+    body {
+        font-size: 75%;
+    }
+}
+
+.ImageHovers {
+    padding: 0 0 20px 0;
+}
+
+.imageoneHoveringLeft {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageoneHoveringLeft .imageoneHoverLeftImage {
+    width: 50%;
+    padding: 20px;
+}
+
+.imageoneHoveringLeft .imageoneHoverAppend img {
+    transform: scaleX(1) !important;
+}
+
+.imageoneHoveringLeft .imageoneHoverLeftImage img {
+    width: 70%;
+    transform: translate(20px, 20px);
+    border-radius: 12px;
+    box-shadow: 1px 0 10px #cd6934 inset,
+        0 0 20px #000;
+    transition: 350ms ease-in-out;
+    transform: scaleX(0);
+}
+
+.imageoneHoveringLeft .imageOneHoverRightContent {
+    width: 50%;
+}
+
+.imageOneHoverRightContent h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.imageOneHoverRightContent h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    background: #cd6934;
+    height: 3px;
+    margin: 20px 0 20px 11rem;
+    width: 45%;
+    border-radius: 10px;
+}
+
+.imageSecondHoverRightContent h1 {
+    color: #fff;
+    transform: translateX(30px);
+}
+
+.imageSecondHoverRightContent h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #cd6934;
+    height: 3px;
+    margin: 20px 0 20px 0rem;
+    width: 34%;
+    border-radius: 10px;
+}
+
+.imageOneHoverRightContent {
+    transform: scaleY(0);
+    transition: 350ms ease-in-out;
+}
+
+.imageoneHoveringLeft .imageOneHoverRightContent p {
+    background-image: linear-gradient(90deg, #f88c52, #fff, #cd6934);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18pt;
+    width: 85%;
+    padding: 30px 30px;
+}
+
+.contentoneHoverAppend {
+    transform: scaleY(1) !important;
+}
+
+.imageSecondHoveringRight {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageSecondHoveringRight .imageSecondHoverRightImage {
+    width: 50%;
+    padding: 20px;
+}
+
+.imageSecondHoveringRight .imageSecondHoverAppend img {
+    transform: scaleY(1) !important;
+}
+
+.imageSecondHoveringRight .imageSecondHoverRightImage img {
+    width: 70%;
+    transform: translate(20px, 20px);
+    border-radius: 12px;
+    box-shadow: 1px 0 10px #cd6934 inset,
+        0 0 20px #000;
+    transition: 350ms ease-in-out;
+    transform: scaleY(0);
+}
+
+.imageSecondHoveringRight .imageSecondHoverRightContent {
+    width: 50%;
+}
+
+.imageSecondHoverRightContent {
+    transform: scaleX(0);
+    transition: 350ms ease-in-out;
+}
+
+.imageSecondHoveringRight .imageSecondHoverRightContent p {
+    background-image: linear-gradient(90deg, #f88c52, #fff, #cd6934);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18pt;
+    width: 85%;
+    padding: 30px 30px;
+    transition: 350ms ease-in-out;
+}
+
+.secondRightContent {
+    transform: scaleX(1) !important;
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1920px)
+{
+    #home {
+        width: 100vw;
+        /* blend   document.getElementById('dumbVid').play(); */
+    }
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/gammaWebBanner.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#mainContent
+{
+    width: 100%;
+}
+
+#mainContent h1 {
+    padding: 20px;
+    font-size: 40pt;
+    color: #fff;
+}
+
+#mainContent p {
+    padding: 20px 20px;
+    color: #fff;
+    font-size: 20pt;
+}
+
+#headertwo {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/dumbleHeader.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.productMainName {
+    padding: 40px;
+    width: 40%;
+}
+
+.productMainName h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'phudu', cursive;
+}

@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Dashboard</title>
-    <link rel="stylesheet" href="../resources/css/dash.css">
+    <link rel="stylesheet" href="{{asset('css/dash.css')}}">
+    {{-- <link rel="stylesheet" href="../resources/css/dash.css"> --}}
 
     {{-- Linking FontAwesome --}}
     <script src="https://kit.fontawesome.com/28535bdb92.js" crossorigin="anonymous"></script>
@@ -47,7 +48,7 @@
                     <div class="dMainCategories">
                         <ul class="dMainCategoryList">
                             <li>Overview</li>
-                            <li><a href="dash/products/">Products</a></li>
+                            <li><a href="products/">Products</a></li>
                             <li>Invoice</li>
                             <li>Sales</li>
                         </ul>
